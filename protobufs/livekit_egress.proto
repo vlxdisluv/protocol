@@ -68,7 +68,9 @@ message RoomCompositeEgressRequest {
 
   repeated WebhookConfig webhooks = 16;  // extra webhooks to call for this request
 
-  // NEXT_ID: 17
+  optional EgressSourceType source_type = 17;
+
+  // NEXT_ID: 18
 }
 
 // record any website
